@@ -6,6 +6,7 @@ import './Page.css';
 const Page: React.FC = () => {
 
   const { name } = useParams<{ name: string; }>();
+  const anotacion = 'AQUI COLOCAMOS CAROUSEL Y PREVIEWS DE LOS PRODUCTOS'
 
   return (
     <IonPage>
@@ -24,7 +25,8 @@ const Page: React.FC = () => {
             <IonTitle size="large">{name}</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name={name} />
+        <ExploreContainer name={anotacion} />
+       
       </IonContent>
     </IonPage>
   );

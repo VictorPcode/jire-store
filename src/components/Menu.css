@@ -18,7 +18,7 @@ ion-menu.md ion-note {
 }
 
 ion-menu.md ion-list-header, ion-menu.md ion-note {
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 ion-menu.md ion-list#inbox-list {
@@ -36,12 +36,13 @@ ion-menu.md ion-list#labels-list ion-list-header {
   margin-bottom: 18px;
   color: #757575;
   min-height: 26px;
+  
 }
 
 ion-menu.md ion-item {
-  --padding-start: 10px;
-  --padding-end: 10px;
-  border-radius: 4px;
+  --padding-start: 15px;
+  --padding-end: 15px;
+  border-radius: 1.5px;
 }
 
 ion-menu.md ion-item.selected {
@@ -53,7 +54,7 @@ ion-menu.md ion-item.selected ion-icon {
 }
 
 ion-menu.md ion-item ion-icon {
-  color: #616e7e;
+  color: #c4d9f2;
 }
 
 ion-menu.md ion-item ion-label {
@@ -66,6 +67,7 @@ ion-menu.ios ion-content {
 
 ion-menu.ios ion-list {
   padding: 20px 0 0 0;
+  
 }
 
 ion-menu.ios ion-note {
@@ -77,11 +79,12 @@ ion-menu.ios ion-item {
   --padding-start: 16px;
   --padding-end: 16px;
   --min-height: 50px;
+  
 }
 
 ion-menu.ios ion-item ion-icon {
   font-size: 24px;
-  color: #73849a;
+  color: #0a0a0b;
 }
 
 ion-menu.ios ion-item .selected ion-icon {
@@ -111,3 +114,10 @@ ion-note {
 ion-item.selected {
   --color: var(--ion-color-primary);
 } 
+
+.custom-ion-item {
+  /* Agrega tus estilos personalizados aquí */
+  background-color: transparent; /* Cambiar el fondo a transparente, por ejemplo */
+  color: #efefef; /* Cambiar el color del texto, por ejemplo */
+  /* Otros estilos personalizados */
+}
