@@ -1,12 +1,13 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { useParams } from 'react-router';
+import Carousel from '../components/Carousel';
 import ExploreContainer from '../components/ExploreContainer';
 import './Page.css';
+import Grid from '../components/Grid';
 
 const Page: React.FC = () => {
 
   const { name } = useParams<{ name: string; }>();
-  const anotacion = 'AQUI COLOCAMOS CAROUSEL Y PREVIEWS DE LOS PRODUCTOS'
 
   return (
     <IonPage>
@@ -18,14 +19,15 @@ const Page: React.FC = () => {
           <IonTitle>{name}</IonTitle>
         </IonToolbar>
       </IonHeader>
-
+   
       <IonContent fullscreen>
+      <Carousel/>
         <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">{name}</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name={anotacion} />
+        <Grid/>
        
       </IonContent>
     </IonPage>
